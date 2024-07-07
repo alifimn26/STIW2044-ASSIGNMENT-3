@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="cuaca.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li><a class="bi bi-newspaper" href="index.html"> NEWS</a></li>
+                <li><a class="bi bi-cloud-fill" href="Weather.html"> WEATHER</a></li>
+                <li><a class="bi bi-translate" href="translate.html">TRANSLATOR</a></li>
+            </ul>
+        </nav>
+        <h1>MULTI FUNCTIONAL WEBSITE</h1>
+    </header>
+
+    <div id="weather-container">
+        <h2>Weather Today</h2>
+        <input type="text" id="city" placeholder="Enter Any City Name">
+        <button onclick="getWeather()">Search</button>
+
+        <img id="weather-icon" alt="Weather Icon">
+
+        <div id="temp-div"></div>
+
+        <div id="weather-info"></div>
+
+        <div id="hourly-forecast"></div>
+
+        <!-- New section for average temperature -->
+        <div id="average-temp"></div>
+
+        <!-- New section for activity suggestion -->
+        <div id="activity-suggestion"></div>
+
+        <canvas id="hourly-chart"></canvas>
+    </div>
+
+    <script src="cuaca.js"></script>
+</body>
+</html>

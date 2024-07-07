@@ -1,0 +1,109 @@
+/* Global Styles */
+body {
+    background-color: #ffffff;
+    color: #e3d9d9;
+    font-family: Arial, Helvetica, 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-size: cover;
+    background-position: center;
+    background-color: #1c20df;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffe7e7;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #fffb22;
+}
+
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 40px;
+    background-color: #fff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Translation Section Styles */
+#translation {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 97%;
+    height: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+select {
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#translation-result {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    min-height: 50px;
+    border-radius: 5px;
+}
+
+#translation-result h3 {
+    margin: 0;
+}
+
+#output-text {
+    margin-top: 10px;
+    white-space: pre-wrap; /* Preserve line breaks */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000000; /* Darker text color for readability */
+}

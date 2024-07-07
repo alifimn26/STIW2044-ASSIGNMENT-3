@@ -1,0 +1,235 @@
+body {
+    background-color: #fcfcfc;
+    color: #000000;
+    font-family: Arial, Helvetica,'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-size: cover;
+    background-position: center;
+    background-color: #1c20df;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffe7e7;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #fffb22;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+section {
+    padding: 20px;
+    text-align: left;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.news-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news-item:hover {
+    transform: scale(1.02);
+}
+
+.news-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.news-item .content {
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news-item .content h2 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #333;
+    flex-grow: 1;
+}
+
+.news-item .content p {
+    margin: 0 0 15px;
+    color: #000000;
+    flex-grow: 1;
+}
+
+.news-item .content a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.news-item .content a:hover {
+    text-decoration: underline;
+}
+
+.ayat {
+    font-family:'Segoe UI', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+    text-align: justify-center;
+    text-transform: uppercase;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #011f62;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #fefefe;
+}
+
+.interaction-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    margin: 5px 0;
+    color: #000000;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .container {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    .news-item img {
+        height: 120px;
+    }
+
+    .news-grid {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    .news-item img {
+        height: 100px;
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+        padding: 5px;
+    }
+}
+
+#map-container {
+    padding: 20px;
+    text-align: center;
+}
+
+#map {
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #5c4093;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2c3033;
+}
